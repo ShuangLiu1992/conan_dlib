@@ -8,7 +8,7 @@ matrix:
     dist: xenial
     compiler:
       - gcc
-    install:
-      - conan user
     script: 
       - "sh build.sh"
+  install:
+    - conan user
