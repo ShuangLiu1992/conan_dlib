@@ -1,4 +1,3 @@
-python3 export_recipes.py
 cd build
 conan user
 conan profile update settings.compiler.libcxx=libstdc++11 default
