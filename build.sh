@@ -1,4 +1,5 @@
-conan user
+conan profile new default --detect
+conan profile update settings.compiler.libcxx=libstdc++11 default
 conan export recipe dlib/19.21@$CONAN_LOGIN_USERNAME/travis
 cd build
 conan install . --build=outdated
