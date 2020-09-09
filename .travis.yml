@@ -10,4 +10,4 @@ matrix:
   install:
     - pip install conan
     - conan user
-    script: "sh build.sh"
+  script: "sh build.sh"
