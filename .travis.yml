@@ -10,5 +10,3 @@ matrix:
       - gcc
     script: 
       - "sh build.sh"
-  install:
-    - conan user
