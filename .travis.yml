@@ -3,11 +3,12 @@ matrix:
   include:
   - os: linux
     language: python
+    cache: pip
     python: "3.7"
     dist: xenial
     compiler:
       - gcc
-  install:
-    - conan user
-  script: 
-    - "sh build.sh"
+    install:
+      - conan user
+    script: 
+      - "sh build.sh"
