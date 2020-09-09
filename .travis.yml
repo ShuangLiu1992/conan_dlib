@@ -8,6 +8,5 @@ matrix:
     compiler:
       - gcc
   install:
-    - pip install conan
     - conan user
   script: "sh build.sh"
