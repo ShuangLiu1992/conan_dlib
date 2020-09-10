@@ -12,4 +12,4 @@ matrix:
       - "sh build.sh && python3 build.py"
   - os: ios
     script: 
-      - "sh build.sh && python3 build.py"
+      - "sh build.sh && python3 build.py && python3 build_ios.py"
