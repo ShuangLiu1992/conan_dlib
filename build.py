@@ -1,0 +1,15 @@
+from conans.client.conan_api import Conan
+import platform
+
+
+conan_api, _, _ = Conan.factory()
+conan_api.create_profile("default", detect=True)
+if platform.system() == "Linux":
+    conan_api.update_profile("default", "settings.compiler.libcxx", "libstdc++11")
+CONAN_LOGIN_USERNAME = os.getenv('CONAN_LOGIN_USERNAME')
+CONAN_PASSWORD = os.getenv('CONAN_PASSWORD')
+conan_api.remote_add("bintray", f"https://api.bintray.com/conan/{CONAN_LOGIN_USERNAME}/test")
+conan_api.authenticate(CONAN_LOGIN_USERNAME, CONAN_PASSWORD, "bintray")
+conan_api.export("./recipe", "dlib", "19.21", CONAN_LOGIN_USERNAME, "github_action")
+conan_api.install()
+conan_api.upload("*", all_package=True, confirm=True, remote_name="bintray")

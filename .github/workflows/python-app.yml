@@ -27,7 +27,7 @@ jobs:
             CONAN_LOGIN_USERNAME: ${{ secrets.CONAN_LOGIN_USERNAME }}
             CONAN_PASSWORD: ${{ secrets.CONAN_PASSWORD }}
           run: |
-            ./build.sh
+            python build.py
         - name: Artifacts
           uses: actions/upload-artifact@v2
           with:	
@@ -52,7 +52,7 @@ jobs:
         CONAN_LOGIN_USERNAME: ${{ secrets.CONAN_LOGIN_USERNAME }}
         CONAN_PASSWORD: ${{ secrets.CONAN_PASSWORD }}
       run: |
-        ./build.sh
+        python build.py
     - name: Artifacts
       uses: actions/upload-artifact@v2
       with:	
