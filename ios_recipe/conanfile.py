@@ -18,16 +18,6 @@ class DLIBConan(ConanFile):
     generators = "cmake"
     exports_sources = "toolchain.cmake"
 
-    def package(self):
-        self.copy("toolchain.cmake")
-
-    def package_info(self):
-        self.env_info.CONAN_CMAKE_TOOLCHAIN_FILE = os.path.join(self.package_folder, "toolchain.cmake")
-
-    def configure(self):
-        self.output.error(self.options.build_archs)
-
-
     def init(self):
         self.source_path = f"{self.name}-{self.version}"
 
