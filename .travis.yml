@@ -11,8 +11,5 @@ matrix:
     script: 
       - "sh build.sh"
   - os: ios
-    dist: bionic
-    compiler:
-      - gcc
     script: 
       - "sh build.sh"
