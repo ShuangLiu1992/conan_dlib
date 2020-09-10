@@ -1,9 +1,9 @@
 sudo: required
+language: python
+cache: pip
+python: "3.7"
 matrix:
   include:
-  language: python
-  cache: pip
-  python: "3.7"
   - os: linux
     dist: bionic
     compiler:
