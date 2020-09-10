@@ -1,11 +1,17 @@
 sudo: required
 matrix:
   include:
+  language: python
+  cache: pip
+  python: "3.7"
   - os: linux
     dist: bionic
-    language: python
-    cache: pip
-    python: "3.7"
+    compiler:
+      - gcc
+    script: 
+      - "sh build.sh"
+  - os: ios
+    dist: bionic
     compiler:
       - gcc
     script: 
