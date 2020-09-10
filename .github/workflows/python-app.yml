@@ -30,6 +30,7 @@ jobs:
         CONAN_PASSWORD: ${{ secrets.CONAN_PASSWORD }}
       run: |
         ./build.sh
+    - name: Artifacts
       - uses: actions/upload-artifact@v2
         with:	
           name: build
