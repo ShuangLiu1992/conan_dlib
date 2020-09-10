@@ -14,6 +14,6 @@ matrix:
     script: 
       - "sh build.sh && python3 build.py"
   - os: ios
-    osx_image: xcode12u
+    osx_image: xcode11.6
     script: 
       - "sh build.sh && python3 build_ios.py"
