@@ -1,0 +1,25 @@
+{
+ "graph_lock": {
+  "nodes": {
+   "0": {
+    "options": "dlib:build_archs=x86,x86_64\ndlib:fPIC=True\ndlib:shared=False",
+    "requires": [
+     "1"
+    ],
+    "path": "build/conanfile.txt",
+    "context": "host"
+   },
+   "1": {
+    "ref": "dlib/19.21@shuangliu1992/github_action",
+    "options": "build_archs=x86,x86_64\nfPIC=True\nshared=False",
+    "package_id": "6a2a94822d79b3f8edfc416bf6251be538f156cb",
+    "prev": "0",
+    "modified": true,
+    "context": "host"
+   }
+  },
+  "revisions_enabled": false
+ },
+ "version": "0.4",
+ "profile_host": "[settings]\narch_build=x86_64\nbuild_type=Release\ncompiler=apple-clang\ncompiler.libcxx=libc++\ncompiler.version=11.0\nos=iOS\nos.version=9.0\nos_build=Macos\n[options]\n[build_requires]\n[env]\n"
+}
