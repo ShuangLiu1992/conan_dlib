@@ -1,5 +1,6 @@
 from conans.client.conan_api import Conan
 import platform
+import os
 
 
 conan_api, _, _ = Conan.factory()
