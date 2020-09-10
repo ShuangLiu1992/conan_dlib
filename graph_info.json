@@ -1,0 +1,22 @@
+{
+ "options": [
+  [
+   "dlib:build_archs",
+   "x86,x86_64"
+  ],
+  [
+   "dlib:fPIC",
+   "True"
+  ],
+  [
+   "dlib:shared",
+   "False"
+  ]
+ ],
+ "root": {
+  "name": null,
+  "version": null,
+  "user": null,
+  "channel": null
+ }
+}
