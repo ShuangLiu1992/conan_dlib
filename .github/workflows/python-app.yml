@@ -27,6 +27,7 @@ jobs:
             CONAN_LOGIN_USERNAME: ${{ secrets.CONAN_LOGIN_USERNAME }}
             CONAN_PASSWORD: ${{ secrets.CONAN_PASSWORD }}
           run: |
+            xcode-select -switch /Applications/Xcode.app/Contents/Developer
             python build_ios.py
         - name: Artifacts
           uses: actions/upload-artifact@v2
