@@ -9,8 +9,8 @@ conan_api.create_profile("default", detect=True)
 if platform.system() == "Linux":
     conan_api.update_profile("default", "settings.compiler.libcxx", "libstdc++11")
 conan_api.config_set("general.cmake_generator", "Xcode")
-conan_api.config_set("settings.os", "iOS")
-conan_api.config_set("settings.os.version", "9.0")
+conan_api.update_profile("default", "settings.os", "iOS")
+conan_api.update_profile("default", "settings.os.version", "iOS")
 
 CONAN_LOGIN_USERNAME = os.getenv('CONAN_LOGIN_USERNAME')
 CONAN_PASSWORD = os.getenv('CONAN_PASSWORD')
