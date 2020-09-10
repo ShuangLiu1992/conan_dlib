@@ -1,2 +1,2 @@
-python -m pip install --upgrade pip
-pip install conan
+python3 -m pip install --upgrade pip
+pip3 install conan
