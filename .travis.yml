@@ -9,7 +9,7 @@ matrix:
     compiler:
       - gcc
     script: 
-      - "python3 build.py"
+      - "sh build.sh && python3 build.py"
   - os: ios
     script: 
-      - "pip3 install conan && python3 build.py"
+      - "sh build.sh && python3 build.py"
