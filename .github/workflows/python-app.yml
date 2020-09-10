@@ -25,7 +25,6 @@ jobs:
         run: |
           sh build.sh
           python build.py
-          python build_ios.py
   ios:
     runs-on: macOS-latest
     steps:
