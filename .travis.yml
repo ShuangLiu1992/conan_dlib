@@ -12,4 +12,4 @@ matrix:
       - "python3 build.py"
   - os: ios
     script: 
-      - "python3 build.py"
+      - "pip3 install conan && python3 build.py"

@@ -11,7 +11,7 @@ if platform.system() == "Linux":
 conan_api.config_set("general.cmake_generator", "Xcode")
 conan_api.update_profile("default", "settings.os", "iOS")
 conan_api.update_profile("default", "settings.os.version", "9.0")
-
+### just install pip every time?
 CONAN_LOGIN_USERNAME = os.getenv('CONAN_LOGIN_USERNAME')
 CONAN_PASSWORD = os.getenv('CONAN_PASSWORD')
 
